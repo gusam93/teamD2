@@ -3,10 +3,15 @@
 
 class Cal {
 public:
+    // �ڵ� �ۼ�
+    int getGop(int a, int b) {
+        return a * b;
+
     // ÄÚµå ÀÛ¼º
     int getSum(int a, int b) {
         return a + b;
     }
+      
     int getZegop(int a)
     {
         return a * a;
@@ -17,6 +22,13 @@ TEST(TS, tc1)
 {
     EXPECT_EQ(1, 1);
 }
+
+
+TEST(TS, tcGetGop)
+{
+	Cal cal;
+
+    EXPECT_EQ(4, cal.getGop(2, 2));
 
 TEST(TS, tcgetSum) {
     Cal cal;
