@@ -3,9 +3,10 @@
 
 class Cal {
 public:
+    // 코드 작성
     int getGop(int a, int b) {
         return a * b;
-	}
+    }
 };
 
 TEST(TS, tc1)
