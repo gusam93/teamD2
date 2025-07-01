@@ -3,13 +3,18 @@
 
 class Cal {
 public:
-    // 코드 작성
+    int getDivide(int a, int b) {
+        return a / b;
+    }
 };
 
-TEST(TS, tc1)
+TEST(TS, tc5)
 {
-    EXPECT_EQ(1, 1);
+    Cal cal;
+    auto ret = cal.getDivide(10, 5);
+    EXPECT_EQ(2, ret);
 }
+
 int main()
 {
     ::testing::InitGoogleMock();
