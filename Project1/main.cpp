@@ -13,6 +13,14 @@ TEST(TS, tc1)
 {
     EXPECT_EQ(1, 1);
 }
+
+TEST(TS, tcGetGop)
+{
+	Cal cal;
+
+    EXPECT_EQ(4, cal.getGop(2, 2));
+}
+
 int main()
 {
     ::testing::InitGoogleMock();
